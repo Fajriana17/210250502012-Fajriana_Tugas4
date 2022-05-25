@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Binanga"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-25 11:56:53 "/>
+        <attribute name="created" value="QmluYW5nYTsgQklOQU5HQS1QQzsgMjAyMi0wNS0yNTsgMTE6NTE6MDkgOyAyNTk0"/>
+        <attribute name="edited" value="QmluYW5nYTsgQklOQU5HQS1QQzsgMjAyMi0wNS0yNTsgMTE6NTY6NTMgOyAyNTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ukuran" type="Integer" array="False" size=""/>
+            <input variable="ukuran"/>
+            <if expression="ukuran &lt;= 46">
+                <then>
+                    <output expression="&quot;Ukuran S&quot;"/>
+                </then>
+                <else>
+                    <if expression="Ukuran&lt;=48">
+                        <then>
+                            <output expression="&quot;Ukuran M&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="Ukuran&lt;=50">
+                                <then>
+                                    <output expression="&quot;Ukuran L&quot;"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Ukuran XL&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
